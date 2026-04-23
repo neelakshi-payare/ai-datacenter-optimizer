@@ -44,7 +44,7 @@ class DataCenterSimulation:
         energy_factors = {
             "ml":     1.0,
             "rl":     0.65,
-            "dqn":    0.58,
+            "DL":    0.58,
             "hybrid": 0.49
         }
         factor = energy_factors.get(model_type, 1.0)

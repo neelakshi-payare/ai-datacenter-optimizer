@@ -29,7 +29,7 @@ def simulate():
 # ── Compare all 4 models ─────────────────────
 @app.route("/compare", methods=["GET"])
 def compare():
-    models  = ["ml", "rl", "dqn", "hybrid"]
+    models  = ["ml", "rl", "DL", "hybrid"]
     results = []
     for m in models:
         seed = (ord(m[0]) * 1000 + 100 * 10 + 10) % (2**32)
