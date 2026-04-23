@@ -22,7 +22,7 @@ export default function Dashboard() {
     setError(null)
     try {
       const seed = model + '_' + tasks + '_' + servers
-const res = await axios.post('http://127.0.0.1:5000/simulate', {
+const res = await axios.post('https://proactive-expression-production.up.railway.app/simulate', {
   model, num_tasks: tasks, num_servers: servers, seed
 })
       
