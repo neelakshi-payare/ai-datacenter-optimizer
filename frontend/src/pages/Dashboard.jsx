@@ -13,7 +13,7 @@ export default function Dashboard() {
   const models = [
     { id: 'ml',     label: 'ML',     color: '#f59e0b' },
     { id: 'rl',     label: 'RL',     color: '#10b981' },
-    { id: 'dqn',    label: 'DQN',    color: '#6366f1' },
+    { id: 'DL',    label: 'DL',    color: '#6366f1' },
     { id: 'hybrid', label: 'Hybrid', color: '#3b82f6' },
   ]
 

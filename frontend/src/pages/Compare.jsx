@@ -54,7 +54,7 @@ export default function Compare() {
                   <tr key={i} style={{borderBottom:'1px solid #334155',
                     background: d.model === 'HYBRID' ? '#1e3a5f' : 'transparent'}}>
                     <td style={{padding:'0.8rem', fontWeight:700, color:
-                      d.model==='HYBRID'?'#3b82f6':d.model==='DQN'?'#6366f1':
+                      d.model==='HYBRID'?'#3b82f6':d.model==='DL'?'#6366f1':
                       d.model==='RL'?'#10b981':'#f59e0b'}}>
                       {d.model === 'HYBRID' ? '🏆 ' : ''}{d.model}
                     </td>
