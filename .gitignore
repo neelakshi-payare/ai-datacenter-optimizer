@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+
+# Dataset
+*.csv
+data/
+
+# Node
+node_modules/
+dist/

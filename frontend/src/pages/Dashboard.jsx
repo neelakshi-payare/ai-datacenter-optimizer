@@ -21,9 +21,11 @@ export default function Dashboard() {
     setLoading(true)
     setError(null)
     try {
-      const res = await axios.post('http://127.0.0.1:5000/simulate', {
-        model, num_tasks: tasks, num_servers: servers
-      })
+      const seed = model + '_' + tasks + '_' + servers
+const res = await axios.post('http://127.0.0.1:5000/simulate', {
+  model, num_tasks: tasks, num_servers: servers, seed
+})
+      
       setResult(res.data)
     } catch {
       setError('❌ Cannot connect to backend. Make sure Flask is running!')
