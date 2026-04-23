@@ -8,7 +8,7 @@ export default function Compare() {
   const [error, setError]   = useState(null)
 
   useEffect(() => {
-    axios.get('https://proactive-expression-production.up.railway.app/compare')
+    axios.get('https://ai-datacenter-optimizer-production.up.railway.app/compare')
       .then(res => { setData(res.data); setLoading(false) })
       .catch(() => { setError('❌ Cannot connect to backend!'); setLoading(false) })
   }, [])
